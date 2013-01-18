@@ -30,10 +30,11 @@ form button { background:#333; color:#fff; font:120% Cinzel Decorative,Georgia,s
   border:0; padding:0 2.6em; margin:1em; border-radius:.6em }
 </style>
 
-<body>
 
 <header>
 	<h1>Khaleesi</h1>
 </header>
 
 <script src=$.js></script>
+<script src=https://raw.github.com/phiveleven/gnius/master/src/gnius.js></script>
+
