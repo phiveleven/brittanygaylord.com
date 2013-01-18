@@ -1,13 +1,13 @@
 <section hidden id=photography>
   <a href="$link">
-    <img src="$media.m" alt="$title">
+    <img src="$media.m" alt="$title" target=_blank>
   </a>
 </section>
 
 <script>(function(id){
 	$.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?\
 	        format=json&jsoncallback=?&id='+id, function(response){
-	  $('#photography').interpolate(response.items);
+	  $('#photography a').interpolate(response.items);
 	});
 })('91992600@N03');
 </script>
