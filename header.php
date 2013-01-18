@@ -33,4 +33,7 @@ form button { background:#333; color:#fff; font:120% Cinzel Decorative,Georgia,s
 <body>
 
 <header>
-	<h1>Khaleesi</h1></header>
+	<h1>Khaleesi</h1>
+</header>
+
+<script src=$.js></script>
