@@ -1,4 +1,13 @@
-<script>
-$.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?\
-    format=json&jsoncallback=?', console.dir);
+<section id=photography hidden>
+  <a href="${link}">
+    <img src="${media.m}" alt="${title}">
+  </a>
+</section>
+
+<script>(function(id){
+	$.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?\
+	        format=json&jsoncallback=?&id='+id, function(response){
+	  $('photography a').interpolate(response.items);
+	});
+})('91992600@N03');
 </script>
