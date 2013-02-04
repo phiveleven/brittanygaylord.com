@@ -12,7 +12,7 @@
 	       return src.replace(/\{(\w+)\}/, function(p){ return photo[p] });
 	     })
 	     .attr('alt', function(i, alt){ 
-	       return title.replace(/\{(\w+)\}/, function(p){ return photo[p] });
+	       return alt.replace(/\{(\w+)\}/, function(p){ return photo[p] });
 	     })
 	     .appendTo('#photography');
 	  });
