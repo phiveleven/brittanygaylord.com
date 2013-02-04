@@ -9,10 +9,10 @@
 	  $.each(response.photos.photo, function(i, photo){
 	    template.clone()
 	     .attr('src', function(i, src){ 
-	       return src.replace(/\{(\w+)\}/g, function(p){ return photo[p] });
+	       return src.replace(/\{(\w+)\}/g, function(m,p){ return photo[p] });
 	     })
 	     .attr('alt', function(i, alt){ 
-	       return alt.replace(/\{(\w+)\}/g, function(p){ return photo[p] });
+	       return alt.replace(/\{(\w+)\}/g, function(m,p){ return photo[p] });
 	     })
 	     .appendTo('#photography');
 	  });
