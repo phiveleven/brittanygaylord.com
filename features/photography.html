@@ -11,7 +11,7 @@
 	     .attr('src', function(i, src){ 
 	       return src.replace(/\{(\w+)\}/, function(p){ return photo[p] });
 	     })
-	     .attr('title', function(i, title){ 
+	     .attr('alt', function(i, alt){ 
 	       return title.replace(/\{(\w+)\}/, function(p){ return photo[p] });
 	     })
 	     .appendTo('#photography');
