@@ -8,10 +8,10 @@
 	  var template = $('#photography img').detach();
 	  $.each(response.photos.photo, function(photo){
 	    template.clone()
-	     .attr('src', function(src){ 
+	     .attr('src', function(i, src){ 
 	       return src.replace(/\{(\w+)\}/, function(p){ return photo[p] });
 	     })
-	     .attr('title', function(title){ 
+	     .attr('title', function(i, title){ 
 	       return title.replace(/\{(\w+)\}/, function(p){ return photo[p] });
 	     })
 	     .appendTo('#photography');
