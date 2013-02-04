@@ -1,13 +1,11 @@
 <section hidden id=photography>
-  <a href="$link">
-    <img src="$media.m" alt="$title" target=_blank>
-  </a>
+  <img src="$url_l alt="$title" target=_blank>
 </section>
 
-<script>(function(id){
-	$.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?\
-	        format=json&jsoncallback=?&id='+id, function(response){
-	  $('#photography a').interpolate(response.items);
+<script>(function(){
+  var url = 'http://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=b9b6cd7f944d7323602c6374794a12c0&user_id=91992600%40N03&extras=url_l&per_page=50&format=json&nojsoncallback=1';
+	$.getJSON(url).always(function(response){
+	  $('#photography img').interpolate(response.photos.photo);
 	});
-})('91992600@N03');
+})();
 </script>
