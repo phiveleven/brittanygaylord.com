@@ -1,0 +1,33 @@
+/* khaleesi.la */
+
+#photos { overflow:hidden }
+    #photos a { float:left; background:black; padding:.3em 1px }
+
+#notifications,
+[for=notifications] { float:right }
+[action*=subscribe] { display:none }
+#notifications:checked 
+  + [action*=subscribe] { display:block }
+[action*=subscribe] { float:right; clear:right;
+	font-family:Cinzel Decorative; text-align:right;
+	line-height:2.6; padding:0 1em }
+	input { background:white; color:#333; font-size:inherit }
+
+	
+/* skin */
+body  * { margin:0; padding:0; border:0; background:transparent;
+	color:inherit; font-size:inherit; font-family:inherit;
+	-moz-box-sizing: border-box; box-sizing:border-box }
+
+html { background:url(http://khaleesi.la/img/cheesers.jpg) 0 0 /cover no-repeat #101;
+  font:1em/1.6 Berkshire Swash; color:white; min-width:420px }
+
+body > * { background:rgba(255,255,255,.1) }
+h1 { font-size:8em; font-family:Stalemate; text-align:right;
+    white-space:nowrap }
+    
+input { background:white; border-radius:3px; color:black;
+    height:1.6em; line-height:1.6; margin:0 .3em; padding:.3em .6em;
+    vertical-align:middle }
+
+footer { position:absolute; bottom:0;left:0;right:0; text-align:center }

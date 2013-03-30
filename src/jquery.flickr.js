@@ -1,10 +1,10 @@
-/*****************************************
-* Flickr API (in jQuery)
-* version: 1.0 (02/23/2009)
-* written for jQuery 1.3.2
-* by Ryan Heath (http://rpheath.com)
-*****************************************/ 
+/**
+ * jquery.flickr.js
+ * mangled circa 2013 by @darkgoyle
+ * original: https://github.com/rpheath/jquery-flickr 
+ */
 (function($) {
+	var SEKRIT ='126782d501ec1e9cbcb1a77811f5c1ef';
     // core extensions
     $.extend({
         // determines if an object is empty
@@ -74,12 +74,11 @@
 
             html = $.flickr.linkTag($.flickr.thumbnail.imageTag(image), photo, href)
 
-            return ['<li>' + html + '</li>']
+            return [html]
         })
             .join("\n")
 
-        return $('<ul class="flickr"></ul>')
-            .append(thumbnails)
+        return thumbnails;
     }
 
     // handles requesting and thumbnailing photos
@@ -123,7 +122,7 @@
 
         // base configuration
         $.flickr.settings = $.extend({
-            api_key: 'YOUR API KEY',
+            api_key: SEKRIT,
             thumbnail_size: 'sq'
         }, options || {})
 

@@ -9,7 +9,7 @@
 <!-- link rel=apple-touch-startup-image href=/startup.png-->
 
 <link rel=stylesheet href="//fonts.googleapis.com/css?family=Stalemate|Berkshire+Swash|Cinzel+Decorative">
-<link rel=stylesheet href=screen.css>
+<link rel=stylesheet href=src/screen.css>
 <link rel=author href="https://twitter.com/doctype_brit">
 
 
@@ -17,7 +17,7 @@
 
 <h1> ♕ Khaleesi</h1>
 
-<a hidden href=/photos> Photos </a>
+<section id=photos></section>
 
 <label for=notifications> Sign up for news? </label> 
 
@@ -32,7 +32,14 @@
 
 <footer> circa 2013 ❤ Los Angeles, California </footer>
 
+<script src=src/$.js></script>
+<script src=src/jquery.flickr.js></script>
+<script>
+$('#photos')
+    .flickr()
+        .photosSearch({ user_id:'91992600@N03' })</script>
+
 <script>_gaq=[['_setAccount','UA-36931826-1'],['_trackPageview']]</script>
 <script src=//www.google-analytics.com/ga.js async></script>
 
-<!-- your HTML should look like this, I think -->
+<!-- That's right, no body tags. Are you scared? -->
