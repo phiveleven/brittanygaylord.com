@@ -20,6 +20,7 @@ body  * { margin:0; padding:0; border:0; background:transparent;
 	-moz-box-sizing: border-box; box-sizing:border-box }
 
 html { background:url(../img/cheesers.jpg) 0 0 /cover no-repeat #101;
+  background-color:#101; /* fallback for /cover */
   font:1em/1.6 Berkshire Swash; color:white; min-width:420px }
 
 body > * { background:rgba(255,255,255,.1) }
