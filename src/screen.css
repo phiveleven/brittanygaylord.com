@@ -1,9 +1,27 @@
 /* khaleesi.la */
+@charset 'UTF-8';
 
-#photos { overflow:hidden }
-    #photos a { float:left; background:black; padding:.3em 1px }
+html, body { height:100%; text-align:center }
+html { background:#101; 
+  font:normal 400 100%/1.6 Source Sans Pro, sans-serif }
 
-#notifications,
+#khaleesi { font:16vw Allura; line-height:61vh; display:block }
+
+address { display:inline }
+time:before { content:'❤'; display:inline-block;
+  padding:0 1em }
+
+/* reset */
+* { margin:0; padding:0; border:0; background:transparent;
+    transition:all 161ms;
+    font-size:inherit; font-family:inherit; font-style:inherit;
+    text-decoration:none; color:white;
+    -moz-box-sizing: border-box; box-sizing:border-box }
+
+#photos { text-align:center }
+#photos a img { border:1px solid rgba(0,0,0,.6) }
+
+/** /#notifications,
 [for=notifications] { float:right }
 [action*=subscribe] { display:none }
 #notifications:checked 
@@ -11,24 +29,4 @@
 [action*=subscribe] { float:right; clear:right;
 	font-family:Cinzel Decorative; text-align:right;
 	line-height:2.6; padding:0 1em }
-	input { background:white; color:#333; font-size:inherit }
-
-	
-/* skin */
-body  * { margin:0; padding:0; border:0; background:transparent;
-	color:inherit; font-size:inherit; font-family:inherit;
-	-moz-box-sizing: border-box; box-sizing:border-box }
-
-html { background:url(../img/cheesers.jpg) 0 0 /cover no-repeat #101;
-  background-color:#101; /* fallback for /cover */
-  font:1em/1.6 Berkshire Swash; color:white; min-width:420px }
-
-body > * { background:rgba(255,255,255,.1) }
-h1 { font-size:8em; font-family:Stalemate; text-align:right;
-    white-space:nowrap }
-    
-input { background:white; border-radius:3px; color:black;
-    height:1.6em; line-height:1.6; margin:0 .3em; padding:.3em .6em;
-    vertical-align:middle }
-
-footer { position:absolute; bottom:0;left:0;right:0; text-align:center }
+	input { background:white; color:#333; font-size:inherit } /**/
