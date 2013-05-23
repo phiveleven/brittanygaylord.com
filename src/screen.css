@@ -7,7 +7,7 @@ html { background:#101;
 
 @-webkit-keyframes feature { from, to { font-size:16vw } }
 @-webkit-keyframes shrink { from { font-size:16vw }}
-#khaleesi { font: 3em/1.6 Allura; display:block;
+#khaleesi { font: 2em/1.6 Allura; display:block;
  margin:0; -webkit-animation:feature 5s, shrink 2s 5s cubic-bezier(.6,0,.6,0) }
  
 
