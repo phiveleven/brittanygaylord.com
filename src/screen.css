@@ -8,7 +8,10 @@ html { background:#101;
 @-webkit-keyframes feature { from, to { font-size:16vw } }
 @-webkit-keyframes shrink { from { font-size:16vw }}
 
-.logo { font: 2em/1.6 Allura; display:block; text-shadow:0 0 30px #ffff00; color:#959499;
+nav { margin-bottom:10px }
+nav a { text-decoration:none; color:#ffd5cc; text-shadow:0 0 30px #ffff00;
+ padding:5px }
+.logo { font: 2em/1.6 Allura; display:block; color:#fff;
  margin:0; -webkit-animation:feature 5s, shrink 2s 5s cubic-bezier(.6,0,.6,0) }
  
 
