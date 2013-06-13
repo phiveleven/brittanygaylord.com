@@ -32,16 +32,6 @@ nav a { text-decoration:none; color:#ffd5cc; text-shadow:0 0 30px #ffff00;
 #photos { text-align:center }
 #photos a img { border:1px solid rgba(0,0,0,.6) }
 
-#notifications,
-[for=notifications] { float:right }
-[action*=subscribe] { display:none }
-#notifications:checked 
-  + [action*=subscribe] { display:block }
-[action*=subscribe] { float:right; clear:right;
-	font-family:Cinzel Decorative; text-align:right;
-	line-height:2.6; padding:0 1em }
-	input { background:white; color:#333; font-size:inherit }
-
 address { color:#ffd5cc; padding:4em 0 }
 time { color:inherit }
 time:before { content:'❤'; display:inline-block;
