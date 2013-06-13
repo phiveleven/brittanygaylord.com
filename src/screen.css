@@ -8,11 +8,12 @@ html { background:#101;
 @-webkit-keyframes feature { from, to { font-size:16vw } }
 @-webkit-keyframes shrink { from { font-size:16vw }}
 
-.logo { font: 2em/1.6 Allura; display:block;
+.logo { font: 2em/1.6 Allura; display:block; text-shadow:0 0 30px #ffff00; color:#959499;
  margin:0; -webkit-animation:feature 5s, shrink 2s 5s cubic-bezier(.6,0,.6,0) }
  
 
-[id] { max-width:610px; background:#222328; display:inline-block }
+[id] { max-width:610px; background:#222328; display:inline-block;
+  margin:2px; vertical-align:top }
 
 [id]:before { content:attr(id); text-transform:uppercase;
   display:block;
@@ -38,7 +39,8 @@ html { background:#101;
 	line-height:2.6; padding:0 1em }
 	input { background:white; color:#333; font-size:inherit }
 
-address { display:inline }
+address { color:#ffd5cc; padding:4em 0 }
+time { color:inherit }
 time:before { content:'❤'; display:inline-block;
   padding:0 1em }
 
