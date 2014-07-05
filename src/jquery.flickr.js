@@ -23,7 +23,7 @@
         // the actual request url
         // (constructs extra params as they come in)
         url: function(method, params) {
-            return 'http://api.flickr.com/services/rest/?method=' + method + '&format=json' + '&api_key=' + $.flickr.settings.api_key + ($.isEmpty(params) ? '' : '&' + $.param(params)) + '&jsoncallback=?'
+            return 'https://api.flickr.com/services/rest/?method=' + method + '&format=json' + '&api_key=' + $.flickr.settings.api_key + ($.isEmpty(params) ? '' : '&' + $.param(params)) + '&jsoncallback=?'
         },
         // translate plugin image sizes to flickr sizes
         translate: function(size) {
