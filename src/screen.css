@@ -12,7 +12,7 @@ a { text-decoration:none; color:inherit }
 	display:flex; align-items:center; justify-content:space-around }
 @media (min-width:640px) { #reel iframe { width:640px; height:360px }}
 
-#videos, #photos { white-space:nowrap; overflow-x:auto; max-width:100vw }
+#videos, #photos { white-space:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; max-width:100vw }
 #videos iframe, #photos img { display:inline; box-shadow:0 0 3px black }
 
 #photos { margin-top:110px }
