@@ -5,11 +5,12 @@
 body { font:100%/1.6 FontAwesome,Karma,sans-serif;
 	background: url(//brittanygaylord.com/img/brittany-blueeyes.jpg) no-repeat top/cover #d9000f; color:#d9000f; 
 	height:100vh;
-	display:flex; flex-direction:column; 
-	justify-content:flex-end }
+    display:-webkit-flex; -webkit-flex-direction:column; -webkit-justify-content:flex-end;
+	display:flex; flex-direction:column; justify-content:flex-end }
 a { text-decoration:none; color:inherit }
 
-#reel { background:rgba(0,0,0,.7); 
+#reel { background:rgba(0,0,0,.7);
+    display:-webkit-flex; -webkit-align-items:center; -webkit-justify-content:space-around;
 	display:flex; align-items:center; justify-content:space-around }
 @media (min-width:640px) { #reel iframe { width:640px; height:360px }}
 
@@ -19,7 +20,8 @@ a { text-decoration:none; color:inherit }
 #photos { margin-top:110px }
 #photos img { height:110px; min-width:110px  }
 
-nav { display:flex; justify-content:space-around; align-items:center }
+nav { display:-webkit-flex; -webkit-justify-content:space-around; -webkit-align-items:center;
+    display:flex; justify-content:space-around; align-items:center }
 #social { background:rgba(255,255,255,.7); margin-top:32px;
 	border-top:3px solid hsl(203,100%,70%); box-shadow:0 -1px 4px white }
 #social a { font-size:32px }
@@ -29,7 +31,8 @@ nav { display:flex; justify-content:space-around; align-items:center }
 :target { max-height:400px !important }
 @media (max-width:1024px){
 	#photos, #reel { max-height:0; overflow:hidden; transition:max-height 250ms }
-	#sitenav { display:flex; font-size:20px; color:black; line-height:2.6;
+	#sitenav { display:-webkit-flex;
+        display:flex; font-size:20px; color:black; line-height:2.6;
 		box-shadow:0 0 10px rgba(0,0,0,.4) }
 	.logo { max-width:30px; white-space:nowrap; overflow:hidden }
 }
