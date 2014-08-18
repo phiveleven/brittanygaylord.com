@@ -29,7 +29,7 @@ nav { display:-webkit-flex; -webkit-justify-content:space-around; -webkit-align-
 :target { max-height:400px !important }
 @media (max-width:1024px){
 	#photos, #reel { max-height:0; overflow:hidden; transition:max-height 250ms }
-    :target { overflow-x:auto !important }
+    :target { overflow-x:auto !important; -webkit-overflow-scrolling:touch }
 	#sitenav { display:-webkit-flex;
         display:flex; font-size:20px; color:black; line-height:2.6;
 		box-shadow:0 0 10px rgba(0,0,0,.4) }
