@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 /* Focus Locus */
-[hidden]:target { max-height:100vh; opacity:.9; padding:1.6rem 1ex }
+[hidden]:target { max-height:100vh; opacity:.9; padding:1.6rem 0 }
 [hidden] > * { vertical-align:middle }
 article[hidden]:before { content:attr(id); text-transform:capitalize;
 	background:rgba(255,255,255,.8); line-height:150px; display:inline-block;
