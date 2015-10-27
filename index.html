@@ -60,7 +60,23 @@
 <img id="background" alt="Brittany Jo Gaylord" src=img/brittany-blueeyes.jpg>
 
 <script src=src/$.js></script>
-<script src=src/photos.js async></script>
+<script>
+$(function(){
+    setTimeout(function(){
+        $('article a').replaceWith(function(){
+            return this.href
+                .replace(/^.+youtu.be\/(.+)/,
+                         '<iframe src=//youtube.com/embed/$1?autohide=1&showinfo=0&rel=0 allowfullscreen></iframe>')
+                .replace(/^.+vimeo.com\/(.+)/,
+                        '<iframe src=//player.vimeo.com/video/$1 allowfullscreen></iframe>');
+        });
+        $.getScript('src/jquery.flickr.js', function(){
+            $('#photos').flickr({ link_to_size:'m', thumbnail_size:'m' })
+                .photosSearch({ user_id:'91992600@N03' });
+        });
+    }, 1e3);
+});
+</script>
 
 <script>_gaq=[['_setAccount','UA-36931826-1'],['_trackPageview']]</script>
 <script -src=//www.google-analytics.com/ga.js async></script>
